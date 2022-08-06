@@ -1,0 +1,541 @@
+@import "../../css/index.scss";
+@import "bootstrap/dist/css/bootstrap.min.css";
+.main-area {
+  .heroSection {
+    background-image: url("../../images/hero-section.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    height: 284px;
+    padding: 50px 0;
+    @media screen and (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+      height: auto;
+    }
+    h2 {
+      @media screen and (max-width: 768px) {
+        font-weight: 500;
+        font-size: 39px;
+        line-height: 48px;
+      }
+      max-width: 1000px;
+      font-family: "rubic";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 49px;
+      line-height: 58px;
+      color: $yellow-heading;
+    }
+    p {
+      margin-top: 22px;
+      max-width: 1000px;
+      font-family: "rubic";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+  }
+  .api-section {
+    margin-top: 23px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .flex-reverse {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+    .flex-normal {
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    h2 {
+      font-family: "rubic";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+      text-transform: uppercase;
+      color: $yellow-heading;
+    }
+    .api-content {
+      // @media screen and (max-width: 768px) {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
+      margin-bottom: 101px;
+      display: flex;
+
+      .mr-90 {
+        margin-right: 90px;
+        @media screen and (max-width: 1024px) {
+          margin-right: 0;
+        }
+      }
+      .ml-75 {
+        margin-left: 75px;
+        @media screen and (max-width: 1024px) {
+          margin-left: 0;
+        }
+      }
+      .api-content-detail {
+        margin-top: 40px;
+
+        h3 {
+          @media screen and (max-width: 768px) {
+            max-width: 100%;
+          }
+          max-width: 500px;
+          font-family: "rubic";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 25px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: $blue-text;
+        }
+        p {
+          @media screen and (max-width: 768px) {
+            max-width: 100%;
+          }
+          margin-top: 30px;
+          max-width: 500px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        a {
+          font-family: "rubic";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14.7987px;
+          line-height: 18px;
+          color: $blue-text;
+        }
+      }
+      .api-img {
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .bussiness-product-section {
+    background-image: url(../../images/busi-background.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    // height: 651px;
+    .bussiness-product-title {
+      padding-top: 101px;
+      h2 {
+        font-family: "rubic";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $yellow-heading;
+      }
+      p {
+        margin-top: 15px;
+        font-family: "rubic";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+        color: $white-text;
+      }
+    }
+    .bussiness-card-content {
+      display: flex;
+      padding-top: 61px;
+      padding-bottom: 103px;
+      justify-content: center;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .mr-94 {
+        @media screen and (max-width: 768px) {
+          margin-right: 34px;
+        }
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+        }
+        margin-right: 94px;
+      }
+      .bussiness-card {
+        text-align: center;
+        padding: 5px;
+
+        .bussiness-card-detail {
+          @media screen and (max-width: 768px) {
+            height: 400px;
+          }
+          @media screen and (max-width: 767px) {
+            margin: 0 auto 30px;
+            height: auto;
+          }
+          max-width: 300px;
+          border-bottom: 5px solid $yellow-heading;
+          h2 {
+            margin-top: 36px;
+            font-family: "rubic";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $white-text;
+          }
+          p {
+            margin-top: 15px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $white-text;
+          }
+          .bussiness-card-footer {
+            margin-top: 40px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a {
+              font-family: "rubic";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 21px;
+              color: $white-text;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .techSection {
+    padding-top: 159px;
+    padding-bottom: 151px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .tech-heading {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-family: "rubic";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $blue-text;
+      }
+      img {
+        margin-left: 37px;
+      }
+    }
+    .tech-content {
+      display: flex;
+      justify-content: space-around;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .tech-step {
+        .tech-step-card {
+          display: flex;
+          margin-top: 50px;
+          span {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 100px;
+            line-height: 136px;
+            color: #f8af2c;
+          }
+          .tech-step-card-inner {
+            margin-top: 45px;
+            margin-left: 30px;
+            max-width: 350px;
+            height: 250px;
+            h3 {
+              font-family: "rubic";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 28px;
+              line-height: 33px;
+              text-transform: uppercase;
+              color: $blue-text;
+            }
+            p {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 25px;
+              color: #515151;
+            }
+            .tech-step-card-inner-img {
+              text-align: right;
+              img {
+                width: 90px;
+                height: 110px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .developer-get-started {
+    @media screen and (max-width: 768px) {
+      height: 460px;
+    }
+    background-image: url("../../images/Rectangle21.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    .get-started-content {
+      padding-top: 101px;
+      display: flex;
+      justify-content: space-between;
+      .get-started {
+        max-width: 650px;
+        h3 {
+          font-family: "rubic";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 36px;
+          line-height: 43px;
+          color: $yellow-heading;
+        }
+        p {
+          margin-top: 20px;
+          margin-bottom: 50px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+          color: $white-text;
+        }
+        .get-started-btn {
+          background-color: $blue-text;
+          color: $white-text;
+          border-color: $white-text;
+          font-weight: bold;
+
+          @media screen and (max-width: 767px) {
+            margin: auto;
+          }
+        }
+      }
+      .get-start-img {
+        margin-bottom: -12px;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .developer-tool-area {
+    padding-top: 106px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    h2 {
+      font-family: "rubic";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+      text-transform: uppercase;
+      color: $blue-text;
+    }
+    p {
+      font-family: "rubic";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: $blue-text;
+    }
+    .developer-tools-content {
+      .developer-tools-cards {
+        display: flex;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          margin-right: 0;
+        }
+        .developer-tool-card {
+          @media screen and (max-width: 768px) {
+            height: 380px;
+          }
+          @media screen and (max-width: 1024px) {
+            padding: 30px 15px 25px 15px;
+          }
+          width: 360px;
+          height: 326px;
+          border-bottom: 5px solid $yellow-heading;
+          background: $white-text;
+          box-shadow: 0px 2px 25px 5px rgba(81, 81, 81, 0.1);
+          border-radius: 5px;
+          padding: 30px 30px 25px 30px;
+          margin-right: 34px;
+          margin-top: 30px;
+          text-align: center;
+
+          @media screen and (max-width: 767px) {
+            margin-right: 0;
+            width: 100%;
+          }
+          h3 {
+            margin-top: 35px;
+            font-family: "rubic";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $blue-text;
+          }
+          p {
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #515151;
+            text-transform: none;
+          }
+          a {
+            font-family: "rubic";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration: underline;
+            color: $blue-text;
+          }
+        }
+      }
+      .developer-tools-btn {
+        margin-top: 50px;
+        margin-bottom: 51px;
+        display: flex;
+        justify-content: center;
+        .register-btn {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .developer-help-area {
+    margin-bottom: 50px;
+    @media screen and (max-width: 767px) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .developer-help-area-title {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-family: "rubic";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: $blue-text;
+      }
+      img {
+        margin-left: 37px;
+      }
+    }
+    .develper-content {
+      .developer-help-cards {
+        display: flex;
+        // justify-content: space-between;
+        // justify-content: center;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+        }
+        .deveoloper-help-card {
+          @media screen and (max-width: 767px) {
+            width: 100%;
+            margin-right: 0;
+          }
+          @media screen and (min-width: 768px) and (max-width: 990px) {
+            width: 198px !important;
+          }
+          @media screen and (min-width: 990px) and (max-width: 1024px) {
+            padding: 15px;
+            width: 275px;
+          }
+          padding: 30px;
+          margin-right: 34px;
+          margin-top: 34px;
+          width: 360px;
+          // height: 311px;
+          background: $white-text;
+          box-shadow: 0px 2px 25px 5px rgba(81, 81, 81, 0.1);
+          border-radius: 5px;
+          text-align: center;
+          border-bottom: 5px solid $yellow-heading;
+          h3 {
+            margin-top: 35px;
+            font-family: "rubic";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: $blue-text;
+          }
+          p {
+            margin-top: 15px;
+            margin-bottom: 40px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #515151;
+          }
+          a {
+            font-family: "rubic";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration: underline;
+            color: $blue-text;
+          }
+        }
+      }
+    }
+  }
+}
